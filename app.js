@@ -1,9 +1,12 @@
-var http = require("http");
-const port = 8081;
-http.createServer(requestListener).listen(port);
-console.log("server is listening on port ", port);
+var express = require('express'); 
+var app = express(); 
+var port = 8081; 
+app.listen(port);
 
-function requestListener(req, res){   
-    res.writeHead(200, {'Content-Type': 'text/plain'});   
-    console.log("Request recieved, responding now ...");   
-    res.end("Hello"); }
+var taskList = []; 
+app.get('/list', function(req, res){   
+    res.send(taskList); 
+})
+
+console.log("Server is listening on", port) 
+

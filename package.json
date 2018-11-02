@@ -1,0 +1,23 @@
+{
+  "name": "node1",
+  "version": "1.0.0",
+  "description": "testing node basics",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbrolin/node1.git"
+  },
+  "author": "jbh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbrolin/node1/issues"
+  },
+  "homepage": "https://github.com/jbrolin/node1#readme"
+}
